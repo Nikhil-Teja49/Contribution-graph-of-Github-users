@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:  #32174d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    font-family:'poppins','robotto';
+    color:white;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.search{
+    display: flex;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.eun{
+    height:30px;
+    width:60px;
+    background-color: rgb(103, 103, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+.ta{
+    height:30px;
+    width: 250px;
+    background-color: rgb(176, 176, 176);
+}
+
+.txta{
+  height:30px;
+  width: 250px;
+  background-color: rgb(176, 176, 176);
+  padding-left:5px;
+  border:none;
+}
+
+
+
+.imgdisp{
+  height:100px;
+  width:700px;
+  padding:20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(72, 71, 71) 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#typewriter {
+  border-right: solid 8px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+#typewriter {
+  animation: animated-text 4s steps(46,end) 1s 1 normal both,
+             animated-cursor 5s steps(46,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+/* cursor animations */@keyframes animated-cursor{
+  from{border-right-color: rgba(0,200,0,2);}
+  to{border-right-color: transparent;}
+}
